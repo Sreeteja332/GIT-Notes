@@ -34,3 +34,4 @@ git remote add origin URL:  to add this git to github
 git remote -v to get all the urls attached to this folder
 
 git push origin  master: to push this file to github
+
