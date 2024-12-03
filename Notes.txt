@@ -35,3 +35,21 @@ git remote -v to get all the urls attached to this folder
 
 git push origin  master: to push this file to github
 
+To copy the project of someone else u can use fork to do that becasue someone else cannot do changes to your own project. 
+And to use that use -git clone URL: and it will be downloaded
+
+And the url form where u have used someone else project is called upstream URL to add it 
+- git remote add upstrem URL: and if you check that -git remove-v: you can see the upstream and ur personal account url both
+
+    -So now u can make changes in that project 
+    -create a new branch -git branch BRANCHNAME
+    -navigate to that branch -git checkout BRANCH NAME, now main brnach changes to new Branch that u created
+    -then git add -all, git commit -m "asdfasd" 
+    -if you go to -git log: now you can see that new branch that u have crated have commits.
+    -if now u want to add this to the main branch u should request -pull request
+    -And if u try to push this to upstream  u can't do becasue u dont have the access to push there, So u only have to push to origin i.e, git push upstream BRANCHNAME (it will show error), So u should give git push origin BRANCHNAME
+    -then  the author will get push request and if he apporves u will get pull request.
+    -always create a new pull request to every new functionalities
+    -if you did that just do same like copying the below commit code use git reset CODE then it will be staged, stach adn stash clear done.and then if u r pushing that u have to force push it using git push orign BRANCHNAME -f
+    -
+    
