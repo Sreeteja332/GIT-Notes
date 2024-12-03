@@ -7,4 +7,4 @@ git commit: to commit every thing
 vi filename.txt can add data in the file 
 cat flinename.txt to check the contents in the file
 git restore --staged filename.txt: it will remove that file form stage and you have to commit again to add it again to the stage
-
+git log : to see all the updates
