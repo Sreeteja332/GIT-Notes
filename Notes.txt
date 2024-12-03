@@ -24,3 +24,10 @@ if u want to remove this deleted commit i.e, that if u want to unstage that comm
 that removed files will be there in the staged area.
 
 And if u want to keep them backstage that file and use it later i.e, :git stash
+
+git stash pop: to get the stash files(from back stage) to stage again
+
+git stash clear: to send them back from backstage to delete
+
+git remote add origin URL  to add this git to github
+
