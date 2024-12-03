@@ -55,5 +55,7 @@ And the url form where u have used someone else project is called upstream URL t
     - and in project that u took u can see changes in main branch u can see changes in newbranch that u created.
     - To maintain main branch of upstream and ur own main branch are maintained parallely u can use fetch upstream button or manually (didn't get it)
 
+- To merge all commits into single commit u can use -git rebase -i paste that commit code:
+change Squash and pick what u want to do, all squash will me merged into pick which are above that squash in that list. to exit out of it escape colon x, it will now allow u to create a mesage to this new commit.
 
-    
+- Merge Conflicts: (Did'nt get it) Concept is let say two dev changes same line and created a pull request So u have to resolve that because Git will get confused and ask you to resolve manually.
