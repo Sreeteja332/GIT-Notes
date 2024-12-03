@@ -29,5 +29,8 @@ git stash pop: to get the stash files(from back stage) to stage again
 
 git stash clear: to send them back from backstage to delete
 
-git remote add origin URL  to add this git to github
+git remote add origin URL:  to add this git to github
 
+git remote -v to get all the urls attached to this folder
+
+git push origin  master: to push this file to github
