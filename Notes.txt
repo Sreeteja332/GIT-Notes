@@ -51,5 +51,9 @@ And the url form where u have used someone else project is called upstream URL t
     -then  the author will get push request and if he apporves u will get pull request.
     -always create a new pull request to every new functionalities
     -if you did that just do same like copying the below commit code use git reset CODE then it will be staged, stach adn stash clear done.and then if u r pushing that u have to force push it using git push orign BRANCHNAME -f
-    -
+    -and merge pull request and u can see changes in main project
+    - and in project that u took u can see changes in main branch u can see changes in newbranch that u created.
+    - To maintain main branch of upstream and ur own main branch are maintained parallely u can use fetch upstream button or manually (didn't get it)
+
+
     
