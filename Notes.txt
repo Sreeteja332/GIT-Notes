@@ -17,3 +17,10 @@ cat flinename.txt to check the contents in the file
 git restore --staged filename.txt: it will remove that file form stage and you have to commit again to add it again to the stage
 
 git log : to see all the updates
+
+rm -rf filename.txt to remove file form the commit and if you check status of that file it will show that this file has been deleted
+
+if u want to remove this deleted commit i.e, that if u want to unstage that commit(deletion) u have to copy that exactly below commits code by :git reset COMMITCODE
+that removed files will be there in the staged area.
+
+And if u want to keep them backstage that file and use it later i.e, :git stash
