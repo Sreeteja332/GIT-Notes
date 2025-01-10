@@ -1,14 +1,20 @@
-git init: to initialize the git 
+git init: to initialize the git (on the master branch)
+
+git init -b main(on the main branch)(prefer this)
 
 git status: To check the status of the git 
 
 create a File/folder in that directory and go to git status
 
-git add ./git add -all: to add all of them to the line
+git add ./git add -all: to add all of them to the line (Staging)
 
 then check status it will be tracked
 
 git commit: to commit every thing
+
+git commit -a -m "Your message" this can commit directly without going into saging area
+
+git diff : to know the changes that you have made in the file compared  to previous commit.
 
 vi filename.txt can add data in the file 
 
@@ -21,6 +27,9 @@ git log : to see all the updates
 rm -rf filename.txt to remove file form the commit and if you check status of that file it will show that this file has been deleted
 
 if u want to remove this deleted commit i.e, that if u want to unstage that commit(deletion) u have to copy that exactly below commits code by :git reset COMMITCODE
+
+git branch -M main (if u create a git in main branch and u want to add remote repository in main)
+
 that removed files will be there in the staged area.
 
 And if u want to keep them backstage that file and use it later i.e, :git stash
@@ -31,19 +40,53 @@ git stash clear: to send them back from backstage to delete
 
 git remote add origin URL:  to add this git to github
 
+git tag : to see the tags that u have
+
+git tag -a (version) -m (your message) :now u have created a tag 
+
+git show (version) :to see the description of that particular tag
+
+git push origin (version) : to push the tag to the github.
+
+to create ssh   ssh-keygen -o (and click enter enter till end)
+then if u go to that directory u can find .ssh folder in it  .pub  file will be there in it u can find the key and copy it and go to settings in github website in add key then client and server is connected.
+
+now git remote add origin (paste ssh link here)
+
+to push git push -u origin main (-u means upstream)
+
+to push git push origin main : to push 
 git remote -v to get all the urls attached to this folder
 
 git push origin  master: to push this file to github
 
+-create a new branch -:git branch BRANCHNAME / git checkout -b (branchname)/git switch -c (branchname)
+-to see how many branches u have :git branch
+-navigate to that branch -git checkout BRANCH NAME/git switch (branchname), now main branch changes to new Branch that u created
+-to see how many braches git branch, to see all the braches incl ur repository git branch --all
+-to delete a branch git branch -d (branchname)
+-to push the branch to giuthub git push origin (branchname)
+-to merge the branch that u have created u have to 1st switch to main branch then git merge (branchname)
+-if u miss any file just do : git push origin main.
+-So to not to get multi line in the main branch we can use : git rebase (branchname){u should be in the main branch}
+-Merge Conflict means that if 2 deveploers are working in the same file and same line when we try to merge it, it will fail.
+    -then to know the diff in that 2 files git -diff (branchname){not main branch}
+    -Then open that file and contact the team and make the needed the changes and remove that head line that git gives you.
+
+to pull the changes from github :git pull origin main.
+    -even here u can get the conflict.
+    -Similarly change the changes and done.
+
 To copy the project of someone else u can use fork to do that becasue someone else cannot do changes to your own project. 
 And to use that use -git clone URL: and it will be downloaded
+
+Pull request ; Basically  uforked someones repository and u made changes to it and now u want that owner to include that changes in his project,then u can send the pull request to the owner and he can review and accept the request
 
 And the url form where u have used someone else project is called upstream URL to add it 
 - git remote add upstrem URL: and if you check that -git remove-v: you can see the upstream and ur personal account url both
 
     -So now u can make changes in that project 
-    -create a new branch -git branch BRANCHNAME
-    -navigate to that branch -git checkout BRANCH NAME, now main brnach changes to new Branch that u created
+
     -then git add -all, git commit -m "asdfasd" 
     -if you go to -git log: now you can see that new branch that u have crated have commits.
     -if now u want to add this to the main branch u should request -pull request
